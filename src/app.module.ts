@@ -7,6 +7,7 @@ import { ProductsInMemoryModule } from './products-in-memory/products-in-memory.
 import { CartInMemoryModule } from './cart-in-memory/cart-in-memory.module';
 import { ProductsModule } from './products/products.module';
 import { CartModule } from './cart/cart.module';
+import { NotesModule } from './notes/notes.module';
 
 @Module({
   imports: [
@@ -14,7 +15,8 @@ import { CartModule } from './cart/cart.module';
     ProductsModule,
     CartModule,
     ProductsInMemoryModule,
-    CartInMemoryModule
+    CartInMemoryModule,
+    NotesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
